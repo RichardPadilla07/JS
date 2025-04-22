@@ -91,6 +91,7 @@ CLASE #3
 PUENTE: 
 - PUNTO A
 - PUNTO B
+
 INTERNET:
 Un puente (TCP-IP) que permite conectar 2 puntos (aplicaciones o dispositivos) para intercambiar información.
 
@@ -104,8 +105,21 @@ API:
 Un puente (HTTP o HTTPS) que permite conectar 2 puntos (aplicaciones o dispositivos) para intercambiar recursos.
 
 JAVASCRIPT:
-Es un leguaje para crear aplicación y ser funcional en el navegador.
+Es un leguaje de programacion que permite crear paginas web dinamicas.
+
+V8:
+Es un motor de JavaScript que permite ejecutar el lenguaje en el navegador.
+
+NODE:
+Es una herramienta que permite ejecutar JavaScript en el servidor.
 
 ECMASCRIPT:
-Es una estándar que define la sintaxis y características de JavaScript.
+Reglas para escribir JavaScript.
+
+JSON:
+Estandar abierto para  el intercambio de informacion.
+
+JSON vs Objecto:
+Comillas dobles en la clave.
+
 */
