@@ -85,3 +85,4 @@ else {
 const mensaje = carritoCompra.length === 0 ? "El carrito de compras esta vacio" : "El carrito de compras tiene productos"
 console.log(mensaje) 
 
+// BUENO ESTO ES LA CLASE 3 NOE QUE MAS SERIA
