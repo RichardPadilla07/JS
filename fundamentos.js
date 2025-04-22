@@ -85,4 +85,27 @@ else {
 const mensaje = carritoCompra.length === 0 ? "El carrito de compras esta vacio" : "El carrito de compras tiene productos"
 console.log(mensaje) 
 
-// BUENO ESTO ES LA CLASE 3 NOE QUE MAS SERIA
+// Summary (resumen)
+/*
+CLASE #3
+PUENTE: 
+- PUNTO A
+- PUNTO B
+INTERNET:
+Un puente (TCP-IP) que permite conectar 2 puntos (aplicaciones o dispositivos) para intercambiar información.
+
+TCP-IP:
+Protocolo de internet que divide y encamina el recurso.
+
+WEB:
+Un puente (HTTP o HTTPS) que permite conectar 2 puntos (aplicaciones o dispositivos) para intercambiar paginas web.
+
+API:
+Un puente (HTTP o HTTPS) que permite conectar 2 puntos (aplicaciones o dispositivos) para intercambiar recursos.
+
+JAVASCRIPT:
+Es un leguaje para crear aplicación y ser funcional en el navegador.
+
+ECMASCRIPT:
+Es una estándar que define la sintaxis y características de JavaScript.
+*/
