@@ -249,3 +249,20 @@ let result = typeOfReturn() // asignamos a una variable nueva para poder usarla
 
 result() // aqui llamamos a la funcion anonima que esta dentro de la funcion typeOfReturn 
 
+
+
+/*
+
+WEB PRIMERA PRUEBA
+
+CONSUMIR UNA API - FACEAPI (regula)
+reconocimiento y un login
+
+LA API HARA UN REGISTRO DE LA PERSONA Y LEER EL RESOTRO Y LE DA ACCESO, CASO CONTRARIO NO LE DA ACCESO
+
+
+
+
+PLATAFORMA - FACEIO - PARA OBETENER EL TOKEN (registrarnos)
+
+*/
