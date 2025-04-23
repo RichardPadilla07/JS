@@ -191,15 +191,61 @@ console.log(allinformation)
 
 
 
+console.log(Object.values(user))   // devuelve un array con los valores del objeto       
+console.log(Object.keys(user))     // devuelve un array con las claves del objeto
+console.log(Object.values(user).includes("")) // devuelve true o false si existe el valor en el objeto  
 
 
 
+// FUNCIONES: Conjuto de pasos para realizar una tarea especifica
+
+// funcion declarativa
+function validateUser(){
+    console.log("Usuario valido")
+}
 
 
+// funcion expresiva
+const validateRol = function(){
+    console.log("Rol valido")
+}
 
 
+// ES6 - funcion flecha
+const validateMail = () => {
+    console.log("Mail valido")
+}
 
 
+// Rest operator vs Spread operator
+// Parametros por defecto
+const finalPrice = function({a=56,b},...rest){
+    console.log(a,b,rest)
+}
+
+finalPrice({b:99},1,2,3,4)
 
 
+//Return
+function typeOfReturn(){
+    //return 123
+    //return true
+    //return "Richard"
+    //return ["Juan", "Melany"]
+    //return {
+        //city:"Quito",
+        //country: "Ecuador"
+    //}
+
+    // Funcion anonima
+    return function(){
+       console.log("Hola")
+    }
+}
+
+console.log(typeOfReturn()) // por consola directamnete
+
+let result = typeOfReturn() // asignamos a una variable nueva para poder usarla
+
+result() // aqui llamamos a la funcion anonima que esta dentro de la funcion typeOfReturn 
 
