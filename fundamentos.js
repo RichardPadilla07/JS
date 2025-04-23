@@ -123,3 +123,83 @@ JSON vs Objecto:
 Comillas dobles en la clave.
 
 */
+
+
+// CLASE #4
+//iTERADORES
+
+
+
+
+
+// OBJETOS: variable tipo compuesto que permite almacenar varios de datos a partir de clave-valor
+
+let user = {
+    name:"Richard",
+    lastname:"Padilla",
+    age: 20,
+    email: "richard.padilla@epn.edu.ec",
+    address:{
+        city: "Quito",
+        telephone: "0987654321"  
+    },
+    password: "1233456",
+}
+
+
+user.image = "avatar.png"
+
+delete user.password // eliminar una propiedad de un objeto
+
+console.log(user)
+
+
+// ES6 - Destructuracion
+//ANTES
+console.log(user.name) 
+console.log(user.lastname)
+
+// NUEVA
+// FORMA DE ACCEDER A CADA VARIABLE DEL OBJETO}
+
+//email: correo esta seccion hace solo cambiar el nombre de la variablee
+let {name, lastname, age, email: correo, address, image} = user 
+
+console.log(name)
+console.log(lastname)
+console.log(correo)
+console.log(address.city) // aqui accedemos a la propiedad de un objeto dentro de otro objeto
+
+
+const friends = {
+    status: true,
+    friendsList: ["Richard", "Juan", "Pedro"],
+    
+    //metodo:
+    sendEmail(){
+        return `Send email to ${friends.friendsList[0]}`
+    }
+
+}
+console.log(friends.sendEmail()) // aqui llamamos al metodo del objeto friends
+
+
+
+// de esta forma poder lo que es unir dos objetos en uno solo
+const allinformation = {...user, ...friends}
+console.log(allinformation)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
