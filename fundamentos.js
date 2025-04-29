@@ -1,3 +1,4 @@
+/*
 // Variable: contenedor (caja) de informacion.
 // ES6
 
@@ -130,7 +131,7 @@ Comillas dobles en la clave.
 
 
 
-
+/*
 
 // OBJETOS: variable tipo compuesto que permite almacenar varios de datos a partir de clave-valor
 
@@ -239,7 +240,7 @@ function typeOfReturn(){
 
     // Funcion anonima
     return function(){
-       console.log("Hola")
+        Console.log("Hola")
     }
 }
 
@@ -249,7 +250,7 @@ let result = typeOfReturn() // asignamos a una variable nueva para poder usarla
 
 result() // aqui llamamos a la funcion anonima que esta dentro de la funcion typeOfReturn 
 
-
+*/
 
 /*
 
@@ -266,3 +267,106 @@ LA API HARA UN REGISTRO DE LA PERSONA Y LEER EL RESOTRO Y LE DA ACCESO, CASO CON
 PLATAFORMA - FACEIO - PARA OBETENER EL TOKEN (registrarnos)
 
 */
+
+
+
+
+
+
+// Arrays 
+let user = {
+    name:"Richard",
+    lastname:"Padilla",
+    address:{
+        city: "Quito"
+    }
+}
+
+let userSkills = {
+    frontend:["HTML", "CSS", "JavaScript"]
+}
+
+
+const allInformation = {...user, ...userSkills} // aqui unimos los dos objetos en uno solo
+console.log(allInformation)
+
+// ES6 - Nombres abreviados de propiedades
+
+const nameDevice = "Laptop"
+const price = 300
+
+const newProduct = {
+    nameDevice,
+    price,
+}
+
+// Funciones
+// CallBack
+
+function mostrarBienvenida(nombre) {
+    console.log(`Bienvenido - ${nombre}`)
+}
+
+function registrarUsuario (CallBack){
+    const nombre = "Richard"
+    CallBack(nombre)
+}
+
+// CallBack - funcion que se pasa como argumento a otra funcion
+registrarUsuario(mostrarBienvenida) // aqui llamamos a la funcion 
+
+
+// Arreglos..... continuacion....
+
+const products = ["Laptop", "Celular", "Tablet"]
+const prices = [500, 300, 200]
+
+// Metodo 1 - ForEach
+
+products.forEach((product) =>{console.log(product)})
+
+// Metodo 2 - Map : me retorna un arreglo
+
+const newProductsOptionOne = products.map((p) => {
+    // console.log(p.toLocaleUpperCase())
+    return p.toLocaleUpperCase()
+})
+
+// o
+
+const newProductsOptionTwo = products.map((p) => {
+    // console.log(p.toLocaleUpperCase())
+    p.toLocaleUpperCase()
+})
+
+
+// o
+
+const newProductsOptionThree = products.map((p) => p.toLocaleUpperCase())
+
+
+// Metodo 3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
