@@ -345,28 +345,53 @@ const newProductsOptionTwo = products.map((p) => {
 const newProductsOptionThree = products.map((p) => p.toLocaleUpperCase())
 
 
-// Metodo 3 
+// Metodo 3 - Filter: filtra los elementos de un arreglo y devuelve un nuevo arreglo con los elementos que cumplen la condicion
+
+const items = products.filter((p) => {
+    return p !== "Laptop"
+})
+
+console.log(items)
 
 
+// Metodo 4 - concat: concatena dos o mas arreglos y devuelve un nuevo arreglo
+
+const newItems = [...products, ...prices]
+console.log(newItems)
 
 
+// Metodo 5 - find: busca un elemento en un arreglo y devuelve el primer elemento que cumple la condicion
+
+const findItem = products.find(p => p === "Tablet")
+console.log(findItem)
+
+// Metodo 6 - push: agrega un elemento al final de un arreglo y devuelve la longitud del nuevo arreglo
+
+products.push("Celular")  // agrega al final del arreglo
+products.unshift("Reloj") // agrega al inicio del arreglo
+
+products.pop() // elimina el ultimo elemento del arreglo
+products.shift() // elimina el primer elemento del arreglo
+
+products.slice() // corta una parte del arreglo
 
 
+const newItemsSlice = products.slice(0, 2) // devuelve una copia de una parte del arreglo
+console.log(newItemsSlice)
 
 
+// Metodo 7 - Includes: verifica si un elemento existe en un arreglo y devuelve true o false
+
+products.includes("Laptop") ? console.log("Existe") : console.log("No existe") // verifica si existe el elemento en el arreglo
 
 
+// Propiedad
+
+products.length === 3 ? console.log("Descuento") : console.log("No hay descuento")
+
+// Metodo 8 - Reduce: reduce un arreglo a un solo valor y devuelve el resultado
 
 
-
-
-
-
-
-
-
-
-
-
-
+const subTotal = prices.reduce((acumulador,price) => acumulador+price,0)
+console.log(subTotal)
 
