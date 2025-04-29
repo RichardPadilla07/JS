@@ -391,7 +391,6 @@ products.length === 3 ? console.log("Descuento") : console.log("No hay descuento
 
 // Metodo 8 - Reduce: reduce un arreglo a un solo valor y devuelve el resultado
 
-
 const subTotal = prices.reduce((acumulador,price) => acumulador+price,0)
 console.log(subTotal)
 
