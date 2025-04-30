@@ -46,3 +46,46 @@ async function obtenerProductosAPITemu(){
 } 
 
 obtenerProductosAPITemu()
+
+
+// LOCAL STORAGE
+fetch("https://jsonplaceholder.typicode.com/users/1") // API de prueba
+
+    .then(r => r.json())
+    .then(data =>{
+        let user = { // Objeto que contiene la información del usuario
+            name:data.name,
+            email:data.email
+        }
+        guardarLocalStorage(user) // Llama a la función para guardar el objeto en el localStorage
+
+    })
+    .catch(e => console.log(e))
+
+
+// Gurada la infromacion en esa base de datos local del navegador
+const guardarLocalStorage = (data) => { 
+    localStorage.setItem(`user`, JSON.stringify(data)) // convierte el valor de JS a JSON
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
