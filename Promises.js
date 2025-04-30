@@ -18,10 +18,27 @@ conexionBDDExterna(true)
     .catch((error)=> console.log(error))
 
 
-
+    // Async/Await: Es una forma de trabajar con promesas que permite escribir código asíncrono de manera más legible y estructurada.
 const obtenerProductos = fetch("https://fakestoreapi.com/products")
 
 obtenerProductos
-    .then(respuesta => respuesta.json())
-    .then(respuesta => console.log(`${respuesta[0].title} - ${respuesta[0].price}`)) 
-    .catch(error => console.log(error)) 
+    .then(respuesta => respuesta.json()) // Esto convierte la respuesta en un objeto JSON
+    .then(respuesta => console.log(`${respuesta[0].title} - ${respuesta[0].price}`))  // Esto imprime el título y el precio del primer producto
+    .catch(error => console.log(error)) // Esto maneja cualquier error que ocurra durante la solicitud
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
