@@ -394,3 +394,17 @@ products.length === 3 ? console.log("Descuento") : console.log("No hay descuento
 const subTotal = prices.reduce((acumulador,price) => acumulador+price,0)
 console.log(subTotal)
 
+
+// Aqui importamos la funcion login de otro archivo
+//import login from './autenticar.js' // importar la funcion login de otro archivo
+//login("Richard", "123456")
+
+// PARA IMPORTAR VARIAS COSAS
+import {login, LIKES} from './autenticar.js' // importar la funcion login de otro archivo
+console.log(LIKES) // aqui llamamos a la constante LIKES que esta en el archivo autenticar.js
+login("Richard", "123456")
+
+
+
+
+
